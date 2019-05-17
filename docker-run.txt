@@ -1,0 +1,1 @@
+docker run -d -p 6789:6789 -v /opt/docker/gotit-blog-api/code/v1:/usr/src/app -e "TZ=Asia/Ho_Chi_Minh" --env-file env.list --name gotit-blog-api gotit-blog-api:v1

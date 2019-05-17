@@ -1,0 +1,14 @@
+version: '2'
+services:
+  callmonitor:
+    image: callmonitor:v1
+    env_file:
+      - env.list
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+    ports:
+      - "6789:6789"
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/var/log/callmonitor.log:/var/log/callmonitor.log"
+
